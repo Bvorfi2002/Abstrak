@@ -1,8 +1,8 @@
 {
+  "homepage": "https://bvorfi2002.github.io/abstrak",
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://new.axilthemes.com/demo/react/abstrak/",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -28,6 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }
